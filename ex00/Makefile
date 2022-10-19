@@ -14,7 +14,7 @@ SRCS	:= \
 
 OBJS		= $(SRCS:.cpp=.o)
 
-.PHONY:	all std clean fclean re
+.PHONY:	all clean fclean re
 
 all:			$(NAME)
 
