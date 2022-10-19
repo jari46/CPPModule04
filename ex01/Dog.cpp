@@ -7,7 +7,7 @@ Dog::Dog()
 }
 
 Dog::Dog(const Dog& src)
-	: _brainPTR(new Brain) {
+	: _brainPTR(new Brain) {/* deep copy */
 	std::cout << "\nDog: Copy constructor called" << std::endl;
 	*this = src;
 }
@@ -16,7 +16,7 @@ Dog& Dog::operator=(const Dog& src) {
 	std::cout << "\nDog: Copy assignment operator called" << std::endl;
 	if (this != &src) {
 		_type = src._type;
-		*(_brainPTR) = *(src._brainPTR);
+		*(_brainPTR) = *(src._brainPTR);/* deep copy */
 	}
 	return *this;
 }

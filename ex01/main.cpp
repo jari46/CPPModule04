@@ -49,32 +49,32 @@ int main() {
 		std::cout << "nabi: "; nabi.getBrain()->displayIdeas();
 		std::cout << "yaong: "; yaong.getBrain()->displayIdeas();
 	}
-	// {
-	// 	std::cout << "\n\n * ROUND 3: an array of dogs and cats * " << std::endl;
+	{
+		std::cout << "\n\n * ROUND 3: an array of dogs and cats * " << std::endl;
 
-	// 	/* make an array */
-	// 	Animal *animalARR[ARR_LEN];
+		/* make an array */
+		const Animal *animalARR[ARR_LEN];
 
-	// 	for (int i = 0; i < ARR_LEN; i++) {
-	// 		if (i / (ARR_LEN / 2)  < 1) {
-	// 			animalARR[i] = new Dog;
-	// 			std::cout << std::endl;
-	// 		}
-	// 		else {
-	// 			animalARR[i] = new Cat;
-	// 			std::cout << std::endl;
-	// 		}
-	// 	}
+		for (int i = 0; i < ARR_LEN; i++) {
+			if (i / (ARR_LEN / 2)  < 1) {
+				animalARR[i] = new Dog;
+				std::cout << std::endl;
+			}
+			else {
+				animalARR[i] = new Cat;
+				std::cout << std::endl;
+			}
+		}
 
-	// 	/* dog and cat class can use their own function */
-	// 	for (int i = 0; i < ARR_LEN; i++) {
-	// 		std::cout << "\nanimal " << i << ": "; animalARR[i]->makeSound();
-	// 	}
+		/* dog and cat class can use their own function */
+		for (int i = 0; i < ARR_LEN; i++) {
+			std::cout << "\nanimal " << i << ": "; animalARR[i]->makeSound();
+		}
 
-	// 	/* destructors of dog or cat is called */
-	// 	for (int i = 0; i < ARR_LEN; i++) {
-	// 		delete animalARR[i];
-	// 		std::cout << std::endl;
-	// 	}
-	// }
+		/* destructors of dog or cat is called */
+		for (int i = 0; i < ARR_LEN; i++) {
+			delete animalARR[i];
+			std::cout << std::endl;
+		}
+	}
 }
