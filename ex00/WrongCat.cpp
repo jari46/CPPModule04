@@ -13,7 +13,7 @@ WrongCat::WrongCat(const WrongCat& src) {
 WrongCat& WrongCat::operator=(const WrongCat& src) {
 	std::cout << "\nWrongCat: Copy assignment operator called" << std::endl;
 	if (this != &src) {
-		_type = src.getType();
+		_type = src._type;
 	}
 	return *this;
 }
