@@ -5,6 +5,8 @@
 #include "Cat.hpp"
 #include "Brain.hpp"
 
+/* pure virtual function, abstract class */
+
 int main() {
 	{
 		std::cout << "\n\n * ROUND 1: inherit from abstract class * " << std::endl;

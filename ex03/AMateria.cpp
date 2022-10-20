@@ -18,9 +18,10 @@ AMateria::AMateria(const AMateria& src) : _type(src._type) {
 }
 
 AMateria& AMateria::operator=(const AMateria &src) {
-	// std::cout << "AMateria copy assignment constructor." << std::endl;
-	if (this != &src)
-		_type = src._type;
+	// std::cout << "AMateria copy assignment operator." << std::endl;
+	if (this != &src) {
+		//do nothing
+	}
 	return *this;
 }
 

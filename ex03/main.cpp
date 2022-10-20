@@ -34,6 +34,8 @@ int main() {
 	std::cout << "    "; me->use(0, *bob);
 	std::cout << "    "; me->use(1, *bob);
 	std::cout << "    "; me->use(2, *bob);
+	std::cout << "    "; me->use(3, *bob);//do nothing
+	std::cout << "    "; me->use(4, *bob);//do nothing
 
 	std::cout << "\n * ROUND 4: unequip materias * " << std::endl;
 	AMateria* floor0 = me->keepEquipment(0);
@@ -42,12 +44,14 @@ int main() {
 	me->unequip(1);//to NULL
 	AMateria* floor2 = me->keepEquipment(2);
 	me->unequip(2);//to NULL
+	me->unequip(3);//do nothing
 
-	me->equip(floor0);
-	floor0 = NULL;
-	me->equip(floor1);
-	floor1 = NULL;
+	std::cout << "    "; me->use(0, *bob);//do nothing
+	std::cout << "    "; me->use(1, *bob); std::cout << "\n";//do nothing
+	me->equip(floor0); floor0 = NULL;//manually handled
+	me->equip(floor1); floor1 = NULL;//manually handled
 	std::cout << "    "; me->use(0, *bob);
+	std::cout << "    "; me->use(1, *bob);
 
 	std::cout << "\n * delete lefted materias * " << std::endl;
 	delete floor0;//free NULL

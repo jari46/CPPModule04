@@ -38,13 +38,13 @@ const std::string &Character::getName() const {
 }
 
 AMateria *Character::keepEquipment(int idx) const {
-	return _equipment[idx];
+	if (idx < 4)
+		return _equipment[idx];
+	else
+		return NULL;
 }
 
 void Character::equip(AMateria *m) {
-	// for(int i = 0; i < 4 ; i++)
-		// if (_equipment[i] == NULL && _equipment[i] == m)
-		// 	return;
 	for(int i = 0; i < 4; i++) {//find the first empty slot
 		if (!_equipment[i]) {
 			_equipment[i] = m;
@@ -56,13 +56,13 @@ void Character::equip(AMateria *m) {
 }
 
 void Character::unequip(int idx) {
-	if (_equipment[idx])
+	if (idx < 4 && _equipment[idx] != NULL)
 		_equipment[idx] = NULL;//must not delete the meteria!
 	//else if unexisting Materia, don’t do anything!
 }
 
 void Character::use(int idx, ICharacter &target) {
-	if (_equipment[idx] != NULL)
+	if (idx < 4 && _equipment[idx] != NULL)
 		_equipment[idx]->use(target);
 	//else if unexisting Materia, don’t do anything!
 }

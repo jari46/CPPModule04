@@ -1,16 +1,16 @@
 #include "WrongAnimal.hpp"
 
 WrongAnimal::WrongAnimal() {
-		std::cout << "\nWrongAnimal: Default Constructor called" << std::endl;
+		std::cout << "WrongAnimal: Default Constructor called" << std::endl;
 	}
 
 WrongAnimal::WrongAnimal(const WrongAnimal& src) {
-	std::cout << "\nWrongAnimal: Copy constructor called" << std::endl;
+	//std::cout << "WrongAnimal: Copy constructor called" << std::endl;
 	*this = src;
 }
 
 WrongAnimal& WrongAnimal::operator=(const WrongAnimal& src) {
-	std::cout << "\nWrongAnimal: Copy assignment operator called" << std::endl;
+	//std::cout << "WrongAnimal: Copy assignment operator called" << std::endl;
 	if (this != &src) {
 		_type = src._type;
 	}
@@ -18,7 +18,7 @@ WrongAnimal& WrongAnimal::operator=(const WrongAnimal& src) {
 }
 
 WrongAnimal::~WrongAnimal() {
-		std::cout << "\nWrongAnimal: Destructor called" << std::endl;
+		std::cout << "WrongAnimal: Destructor called" << std::endl;
 }
 
 //------------------------------------------------------------------------//

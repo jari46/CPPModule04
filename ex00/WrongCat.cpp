@@ -1,17 +1,17 @@
 #include "WrongCat.hpp"
 
 WrongCat::WrongCat() {
-	std::cout << "\nWrongCat: Default Constructor called" << std::endl;
+	std::cout << "WrongCat: Default Constructor called" << std::endl;
 	_type = "WrongCat";
 }
 
 WrongCat::WrongCat(const WrongCat& src) {
-	std::cout << "\nWrongCat: Copy constructor called" << std::endl;
+	//std::cout << "WrongCat: Copy constructor called" << std::endl;
 	*this = src;
 }
 
 WrongCat& WrongCat::operator=(const WrongCat& src) {
-	std::cout << "\nWrongCat: Copy assignment operator called" << std::endl;
+	//std::cout << "WrongCat: Copy assignment operator called" << std::endl;
 	if (this != &src) {
 		_type = src._type;
 	}
@@ -19,7 +19,7 @@ WrongCat& WrongCat::operator=(const WrongCat& src) {
 }
 
 WrongCat::~WrongCat() {
-		std::cout << "\nWrongCat: Destructor called" << std::endl;
+		std::cout << "WrongCat: Destructor called" << std::endl;
 }
 
 //------------------------------------------------------------------------//

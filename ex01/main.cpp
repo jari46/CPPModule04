@@ -7,7 +7,10 @@
 
 #define ARR_LEN 6
 
+/* class with dynamic allocation */
+
 int main() {
+	
 	{
 		std::cout << "\n\n * ROUND 1: Brain class * " << std::endl;
 
@@ -18,7 +21,7 @@ int main() {
 		brain1.setIdeas("perfect", 4);
 		std::cout << "brain1: "; brain1.displayIdeas();
 
-		/* insertion operator copy all content */
+		/* copy assignment operator copies all content */
 		Brain brain2;
 
 		brain2 = brain1;
@@ -31,12 +34,12 @@ int main() {
 		nabi.getBrain()->setIdeas("nabi's", 5);
 		std::cout << "nabi: "; nabi.getBrain()->displayIdeas();
 
-		/* cat class' insertion operator(=) do brain class insertion too */
+		/* cat class' copy assignment operator(=) do brain class copy too */
 		Cat kitty;
 		kitty = nabi;
 		std::cout << "yaong: "; kitty.getBrain()->displayIdeas();
 
-		/* nabi and kitty have their own Brain class */
+		/* nabi and kitty have their own Brain class (by deep copy) */
 		kitty.getBrain()->setIdeas("kitty's", 5);
 		std::cout << "nabi: "; nabi.getBrain()->displayIdeas();
 		std::cout << "kitty: "; kitty.getBrain()->displayIdeas();

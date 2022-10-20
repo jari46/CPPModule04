@@ -2,18 +2,18 @@
 
 Dog::Dog()
 	: _brainPTR(new Brain) {
-	std::cout << "\nDog: Default Constructor called" << std::endl;
+	std::cout << "Dog: Default Constructor called" << std::endl;
 	_type = "Dog";
 }
 
 Dog::Dog(const Dog& src)
 	: _brainPTR(new Brain) {/* deep copy */
-	std::cout << "\nDog: Copy constructor called" << std::endl;
+	std::cout << "Dog: Copy constructor called" << std::endl;
 	*this = src;
 }
 
 Dog& Dog::operator=(const Dog& src) {
-	std::cout << "\nDog: Copy assignment operator called" << std::endl;
+	std::cout << "Dog: Copy assignment operator called" << std::endl;
 	if (this != &src) {
 		_type = src._type;
 		*(_brainPTR) = *(src._brainPTR);/* deep copy */
@@ -22,7 +22,7 @@ Dog& Dog::operator=(const Dog& src) {
 }
 
 Dog::~Dog() {
-	std::cout << "\nDog: Destructor called" << std::endl;
+	std::cout << "Dog: Destructor called" << std::endl;
 	delete _brainPTR;
 }
 
