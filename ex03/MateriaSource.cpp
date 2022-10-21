@@ -28,7 +28,7 @@ void MateriaSource::learnMateria(AMateria *materia) {
 	if (materia) {
 		for(int i = 0; i < 4; i++)
 			if (_materias[i] == NULL) {
-				_materias[i] = materia->clone();
+				_materias[i] = materia;
 				return;
 			}
 	}

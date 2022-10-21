@@ -6,9 +6,13 @@
 #include "IMateriaSource.hpp"
 #include "MateriaSource.hpp"
 
-// equip, use meterias
+// equip, use materias
 #include "ICharacter.hpp"
 #include "Character.hpp"
+
+//void leaks() {
+//	system("leaks Interface-and-recap");
+//}
 
 int main() {
 	std::cout << "\n * ROUND 1: create book and learn * " << std::endl;

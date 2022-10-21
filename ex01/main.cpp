@@ -7,10 +7,13 @@
 
 #define ARR_LEN 6
 
-/* class with dynamic allocation */
+/* class with dynamic allocation & why we do upcasting */
+
+//void leaks() {
+//	system("leaks I-do-not-want-to-set-the-world-on-fire");
+//}
 
 int main() {
-	
 	{
 		std::cout << "\n\n * ROUND 1: Brain class * " << std::endl;
 
@@ -37,7 +40,7 @@ int main() {
 		/* cat class' copy assignment operator(=) do brain class copy too */
 		Cat kitty;
 		kitty = nabi;
-		std::cout << "yaong: "; kitty.getBrain()->displayIdeas();
+		std::cout << "kitty: "; kitty.getBrain()->displayIdeas();
 
 		/* nabi and kitty have their own Brain class (by deep copy) */
 		kitty.getBrain()->setIdeas("kitty's", 5);
@@ -80,4 +83,5 @@ int main() {
 			std::cout << std::endl;
 		}
 	}
+	//atexit(leaks);
 }

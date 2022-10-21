@@ -7,6 +7,10 @@
 
 /* pure virtual function, abstract class */
 
+//void leaks() {
+//	system("leaks Abstract-class");
+//}
+
 int main() {
 	{
 		std::cout << "\n\n * ROUND 1: inherit from abstract class * " << std::endl;

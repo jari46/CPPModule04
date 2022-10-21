@@ -9,6 +9,10 @@
 
 /* upcasting, virtual function, overriding */
 
+//void leaks() {
+//	system("leaks Polymorphism");
+//}
+
 int main() {
 	{
 		std::cout << "\n\n * ROUND 1: normal animals * " << std::endl;
@@ -46,4 +50,5 @@ int main() {
 		delete ap1; std::cout << "\n";// Dog's destructor is called!
 		delete ap2; std::cout << "\n"; 
 	}
+	//atexit(leaks);
 }
