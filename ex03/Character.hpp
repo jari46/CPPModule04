@@ -15,11 +15,11 @@ class Character : public ICharacter {
 		Character& operator=(const Character& src);
 		virtual ~Character();
 
-		const std::string &getName() const;
-		AMateria *keepEquipment(int idx) const;
-		void equip(AMateria *m);
-		void unequip(int idx);
-		void use(int idx, ICharacter &target);
+		virtual const std::string &getName() const;
+		virtual AMateria *keepEquipment(int idx) const;
+		virtual void equip(AMateria *m);
+		virtual void unequip(int idx);
+		virtual void use(int idx, ICharacter &target);
 
 };
 

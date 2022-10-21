@@ -14,12 +14,12 @@ class MateriaSource : public IMateriaSource {
 
 	public:
 		MateriaSource();
-		virtual ~MateriaSource();
 		MateriaSource(const MateriaSource& src);
 		MateriaSource& operator=(const MateriaSource& src);
+		virtual ~MateriaSource();
 
-		void learnMateria(AMateria *materia);
-		AMateria *createMateria(const std::string &type);
+		virtual void learnMateria(AMateria *materia);
+		virtual AMateria *createMateria(const std::string &type);
 };
 
 #endif // MATERIA_SOURCE_HPP

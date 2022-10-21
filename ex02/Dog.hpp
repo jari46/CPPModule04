@@ -13,9 +13,9 @@ class Dog : public Animal {
 		Dog();
 		Dog(const Dog& src);
 		Dog& operator=(const Dog& src);
-		~Dog();
+		virtual ~Dog();
 
-		void makeSound(void) const;
+		virtual void makeSound(void) const;
 		Brain *getBrain(void) const;
 };
 

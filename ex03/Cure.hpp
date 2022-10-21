@@ -6,12 +6,12 @@
 class Cure : public AMateria {
 	public:
 		Cure();
-		virtual ~Cure();
 		Cure(const Cure& src);
 		Cure& operator=(const Cure& src);
+		virtual ~Cure();
 
-		AMateria *clone() const;
-		void use(ICharacter &target);
+		virtual AMateria *clone() const;
+		virtual void use(ICharacter &target);
 };
 
 
