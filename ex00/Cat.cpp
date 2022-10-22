@@ -6,7 +6,7 @@ Cat::Cat() {
 }
 
 Cat::Cat(const Cat& src) {
-	//std::cout << "Cat: Copy constructor called" << std::endl;
+	std::cout << "Cat: Copy constructor called" << std::endl;
 	*this = src;
 }
 

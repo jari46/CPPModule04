@@ -12,7 +12,7 @@ Brain::Brain(const Brain& src) {
 }
 
 Brain& Brain::operator=(const Brain& src) {
-	std::cout << "\nBrain: Copy assignment operator called" << std::endl;
+	//std::cout << "\nBrain: Copy assignment operator called" << std::endl;
 	if (this != &src) {
 		for (int i = 0; i < 100; i++) {
 			_ideas[i] = src._ideas[i];

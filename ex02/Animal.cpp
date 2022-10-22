@@ -10,7 +10,7 @@ Animal::Animal(const Animal& src) {
 }
 
 Animal& Animal::operator=(const Animal& src) {
-	std::cout << "\nAnimal: Copy assignment operator called" << std::endl;
+	//std::cout << "\nAnimal: Copy assignment operator called" << std::endl;
 	if (this != &src) {
 		_type = src._type;
 	}

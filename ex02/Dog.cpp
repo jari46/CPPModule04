@@ -13,7 +13,7 @@ Dog::Dog(const Dog& src)
 }
 
 Dog& Dog::operator=(const Dog& src) {
-	std::cout << "\nDog: Copy assignment operator called" << std::endl;
+	//std::cout << "\nDog: Copy assignment operator called" << std::endl;
 	if (this != &src) {
 		_type = src._type;
 		*(_brainPTR) = *(src._brainPTR);/* deep copy */

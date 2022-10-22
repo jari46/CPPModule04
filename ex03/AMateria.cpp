@@ -14,7 +14,7 @@ AMateria::~AMateria() {
 }
 
 AMateria::AMateria(const AMateria& src) : _type(src._type) {
-	// std::cout << "AMateria copy constructor." << std::endl;
+	 std::cout << "AMateria copy constructor." << std::endl;
 }
 
 AMateria& AMateria::operator=(const AMateria &src) {

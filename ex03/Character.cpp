@@ -10,7 +10,7 @@ Character::Character(const std::string &name)
 }
 
 Character::Character(const Character &src) {
-	// std::cout << "Character copy constructor." << std::endl;
+	 std::cout << "Character copy constructor." << std::endl;
 	*this = src;
 }
 

@@ -10,7 +10,7 @@ Cure::~Cure() {
 }
 
 Cure::Cure(const Cure &src) : AMateria(src) {
-	//std::cout << "Cure copy constructor constructor." << std::endl;
+	std::cout << "Cure copy constructor constructor." << std::endl;
 }
 
 Cure& Cure::operator=(const Cure &src) {

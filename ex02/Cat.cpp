@@ -13,7 +13,7 @@ Cat::Cat(const Cat& src)
 }
 
 Cat& Cat::operator=(const Cat& src) {
-	std::cout << "\nCat: Copy assignment operator called" << std::endl;
+	//std::cout << "\nCat: Copy assignment operator called" << std::endl;
 	if (this != &src) {
 		_type = src._type;
 		*(_brainPTR) = *(src._brainPTR);/* deep copy */

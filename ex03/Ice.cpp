@@ -10,7 +10,7 @@ Ice::~Ice() {
 }
 
 Ice::Ice(const Ice &src) : AMateria(src)  {
-	// std::cout << "Ice copy constructor." << std::endl;
+	 std::cout << "Ice copy constructor." << std::endl;
 }
 
 Ice &Ice::operator=(const Ice &src) {

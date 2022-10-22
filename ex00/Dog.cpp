@@ -6,7 +6,7 @@ Dog::Dog() {
 }
 
 Dog::Dog(const Dog& src) {
-	//std::cout << "Dog: Copy constructor called" << std::endl;
+	std::cout << "Dog: Copy constructor called" << std::endl;
 	*this = src;
 }
 
