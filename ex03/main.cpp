@@ -69,5 +69,6 @@ int main() {
 	delete me;
 	delete bob;
 
+	//atexit(leaks);
 	return 0;
 }

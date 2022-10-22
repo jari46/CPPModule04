@@ -31,4 +31,5 @@ int main() {
 		delete baduk;
 		delete nabi;
 	}
+	//atexit(leaks);
 }
